@@ -49,9 +49,6 @@ export default function HomeClient({
             src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=85"
             alt="Gym equipment"
           />
-          <div className="hero-art-label">
-            <span className="live-dot" /> BUILT FOR CONSISTENCY
-          </div>
         </div>
       </section>
       <section className="library" id="library">
