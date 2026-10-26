@@ -1,6 +1,5 @@
 "use client";
 import type { Workout } from "@/lib/types";
-import { ArrowDown, Dumbbell } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import WorkoutCard from "./WorkoutCard";
 export default function HomeClient({
@@ -41,7 +40,7 @@ export default function HomeClient({
           </p>
           <a className="button button-primary" href="#library">
             {" "}
-            <Dumbbell size={16} /> BROWSE WORKOUTS <ArrowDown size={15} />
+            BROWSE WORKOUTS
           </a>
         </div>
         <div className="hero-art">
@@ -53,9 +52,6 @@ export default function HomeClient({
           <div className="hero-art-label">
             <span className="live-dot" /> BUILT FOR CONSISTENCY
           </div>
-        </div>
-        <div className="hero-index">
-          01 <span /> 03
         </div>
       </section>
       <section className="library" id="library">
