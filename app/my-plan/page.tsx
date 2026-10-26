@@ -96,12 +96,6 @@ export default function MyPlanPage() {
           </button>
         </div>
         <div className="toolbar-right">
-          <input
-            className="plan-search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search list…"
-          />
           <label className="sort-label">
             Sort by{" "}
             <select value={sort} onChange={(e) => setSort(e.target.value)}>
