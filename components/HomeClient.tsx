@@ -1,6 +1,6 @@
 "use client";
 import type { Workout } from "@/lib/types";
-import { ArrowDown, Dumbbell, Search } from "lucide-react";
+import { ArrowDown, Dumbbell } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import WorkoutCard from "./WorkoutCard";
 export default function HomeClient({
@@ -61,20 +61,11 @@ export default function HomeClient({
       <section className="library" id="library">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">PICK YOUR NEXT LIFT</p>
             <h2>THE LIBRARY</h2>
             <p className="section-subtitle">
               Twelve lifts covering every major muscle group.
             </p>
           </div>
-          <label className="search-box">
-            <Search size={17} />
-            <input
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search workouts or muscle groups…"
-            />
-          </label>
         </div>
         {apiError && (
           <p className="inline-alert">
